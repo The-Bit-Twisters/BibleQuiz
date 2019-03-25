@@ -1,7 +1,5 @@
 ﻿using MySql.Connection;
 using MySql.Data.MySqlClient;
-using System;
-using System.Globalization;
 
 namespace BibleQuiz.Components
 {

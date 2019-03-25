@@ -1,7 +1,5 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Collections.Generic;
-using System.Drawing;
 using BibleQuiz.Components;
 
 namespace BibleQuiz.Models

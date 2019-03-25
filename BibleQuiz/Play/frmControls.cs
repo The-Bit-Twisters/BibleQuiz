@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace BibleQuiz.Play
@@ -38,7 +37,7 @@ namespace BibleQuiz.Play
         internal Models.GroupPoints grouppoints;
         private Models.QuestionChoices questionChoices;
 
-        private void ToggleOnOff(CheckBox checkbox)
+        private void CheckboxToggle(CheckBox checkbox)
         {
             if (checkbox.Checked)
             {
@@ -201,7 +200,7 @@ namespace BibleQuiz.Play
                 scoreBoard.Close();
                 scoreBoard.Dispose();
             }
-            ToggleOnOff(chkTotalScoreBoard);
+            CheckboxToggle(chkTotalScoreBoard);
         }
 
         private void chkGameScoreBoard_CheckedChanged(object sender, EventArgs e)
@@ -220,7 +219,7 @@ namespace BibleQuiz.Play
                 gamescoreBoard.Close();
                 gamescoreBoard.Dispose();
             }
-            ToggleOnOff(chkCurrentGameScoreBoard);
+            CheckboxToggle(chkCurrentGameScoreBoard);
         }
 
         private void chkGroupAnswers_CheckedChanged(object sender, EventArgs e)
@@ -239,12 +238,12 @@ namespace BibleQuiz.Play
                 groupanswersBoard.Close();
                 groupanswersBoard.Dispose();
             }
-            ToggleOnOff(chkGroupAnswers);
+            CheckboxToggle(chkGroupAnswers);
         }
 
         private void chkQuestionBox_CheckedChanged(object sender, EventArgs e)
         {
-            ToggleOnOff(chkQuestionBox);
+            CheckboxToggle(chkQuestionBox);
             if (chkQuestionBox.Checked)
             {
                 if (questionBox != null)
@@ -268,7 +267,7 @@ namespace BibleQuiz.Play
 
         private void chkShowChoices_CheckedChanged(object sender, EventArgs e)
         {
-            ToggleOnOff(chkShowChoices);
+            CheckboxToggle(chkShowChoices);
             if (chkShowChoices.Checked)
             {
                 questionBox.ShowChoices();
@@ -279,7 +278,7 @@ namespace BibleQuiz.Play
 
         private void chkRevealAnswer_CheckedChanged(object sender, EventArgs e)
         {
-            ToggleOnOff(chkRevealAnswer);
+            CheckboxToggle(chkRevealAnswer);
             if (chkRevealAnswer.Checked)
             {
                 questionChoices.RevealAnswer();
