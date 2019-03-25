@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Drawing;
 
 namespace BibleQuiz.Models
@@ -86,7 +85,7 @@ namespace BibleQuiz.Models
                 Margin = new Padding(margin / 2, margin, margin, margin);
                 Padding = new Padding(10);
                 Text = answer;
-                TextAlign = ContentAlignment.MiddleCenter;
+                TextAlign = ContentAlignment.MiddleLeft;
             }
 
         }
