@@ -57,7 +57,10 @@ namespace BibleQuiz.Dialogs
 
         private void frmConfig_FormClosed(object sender, FormClosedEventArgs e)
         {
-            mainform.ConnectionTest();
+            if (Builder.ConnectionState == ConnectionState.Open)
+            {
+                mainform.ConnectionTest();
+            }
         }
 
     }
