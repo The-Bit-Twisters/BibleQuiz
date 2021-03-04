@@ -48,7 +48,7 @@
             this.tlpMain.RowCount = 2;
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpMain.Size = new System.Drawing.Size(614, 210);
+            this.tlpMain.Size = new System.Drawing.Size(614, 310);
             this.tlpMain.TabIndex = 0;
             // 
             // btnSave
@@ -60,15 +60,15 @@
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Advent", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Gold;
             this.btnSave.Image = global::BibleQuiz.Properties.Resources.save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(493, 165);
+            this.btnSave.Location = new System.Drawing.Point(482, 265);
             this.btnSave.Margin = new System.Windows.Forms.Padding(0, 5, 5, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btnSave.Size = new System.Drawing.Size(116, 40);
+            this.btnSave.Size = new System.Drawing.Size(127, 40);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -82,29 +82,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttendance.AutoSize = true;
             this.lblAttendance.BackColor = System.Drawing.Color.Black;
-            this.lblAttendance.Font = new System.Drawing.Font("Advent", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttendance.ForeColor = System.Drawing.Color.Gold;
-            this.lblAttendance.Location = new System.Drawing.Point(5, 165);
+            this.lblAttendance.Location = new System.Drawing.Point(5, 265);
             this.lblAttendance.Margin = new System.Windows.Forms.Padding(5, 5, 0, 5);
             this.lblAttendance.Name = "lblAttendance";
             this.lblAttendance.Padding = new System.Windows.Forms.Padding(5);
-            this.lblAttendance.Size = new System.Drawing.Size(488, 40);
+            this.lblAttendance.Size = new System.Drawing.Size(477, 40);
             this.lblAttendance.TabIndex = 0;
             this.lblAttendance.Text = "Attendance";
             this.lblAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dlgAttendance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(624, 220);
+            this.ClientSize = new System.Drawing.Size(624, 320);
             this.ControlBox = false;
             this.Controls.Add(this.tlpMain);
-            this.Font = new System.Drawing.Font("Advent", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = Properties.Resources.logo;
+            this.Icon = global::BibleQuiz.Properties.Resources.logo;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

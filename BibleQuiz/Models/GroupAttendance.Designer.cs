@@ -51,6 +51,7 @@ namespace BibleQuiz.Models
                 Font = new Font("Copperplate Gothic Bold", 16F, FontStyle.Regular, GraphicsUnit.Point);
                 ForeColor = Color.Black;
                 Margin = new Padding(5);
+                MinimumSize = new Size(50, 25);
                 Tag = groupID;
                 Text = groupName;
                 TextAlign = ContentAlignment.MiddleCenter;

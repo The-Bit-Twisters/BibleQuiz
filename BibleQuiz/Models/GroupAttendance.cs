@@ -41,14 +41,22 @@ namespace BibleQuiz.Models
             checkboxGroups = new List<CheckBoxGroup>();
             List<Group> groups = Group.GetAll();
             List<Group> presentGroups = Attendance.GetPresent(gameID);
-            RowCount = 2;
-            RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+
+            RowCount = groups.Count / 4; 
+            if (groups.Count % 4 > 0)
+            {
+                RowCount++;
+            }
+            for (int ctr=0; ctr<RowCount; ctr++)
+            {
+                RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            }
             ColumnCount = 4;
             ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+
             int row = 0, col = 0;
             foreach (Group group in groups)
             {

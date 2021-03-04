@@ -802,7 +802,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = global::BibleQuiz.Properties.Resources.logo;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmControls";
             this.Padding = new System.Windows.Forms.Padding(5);

@@ -74,7 +74,11 @@ namespace BibleQuiz.Settings
                         cmd.Parameters.AddWithValue("name", "Question");
                         cmd.Parameters.AddWithValue("value", questionID);
                         con.Open();
-                        cmd.ExecuteNonQuery();
+                        if (cmd.ExecuteNonQuery() == 0)
+                        {
+                            SQL = "INSERT INTO [current] ([name], [value]) VALUES (@name, @value)";
+                            cmd.ExecuteNonQuery();
+                        }
                     }
                 }
             }
